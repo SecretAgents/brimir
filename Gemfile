@@ -29,6 +29,14 @@ group :development do
 
   # open sent emails in the browser
   gem 'letter_opener', "~> 1.4"
+
+  gem 'capistrano', '~> 3.8'
+  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano-rvm'
+  gem 'capistrano-bundler'
+  gem 'capistrano-faster-assets'
+  #gem 'capistrano-git-submodule-strategy', '~> 0.1', :github => 'ekho/capistrano-git-submodule-strategy'
+  gem 'capistrano-passenger'
 end
 
 group :test do
@@ -44,7 +52,7 @@ end
 # Optional PostgreSQL for production
 gem 'pg', "~> 0.19", group: :postgresql
 # Optional MySQL for production
-gem 'mysql2', "~> 0.4", group: :mysql
+#gem 'mysql2', "~> 0.4", group: :mysql
 # Optional SQLite for development
 gem 'sqlite3', "~> 1.3", group: :sqlite
 
