@@ -1,8 +1,8 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
-  config.secret_key = ENV['DEVISE_SECRET_KEY'] if Rails.env.production?
-  #config.secret_key = 'fe7d3fd2167e6edb1169c4746717750c0e22e450fd440a8a2b174bc65e03be07a4e2a035209f2fab75059072717def07ee4f85636f2126738ad746b697ff4734'
+  #config.secret_key = ENV['DEVISE_SECRET_KEY'] if Rails.env.production?
+  config.secret_key = 'fe7d3fd2167e6edb1169c4746717750c0e22e450fd440a8a2b174bc65e03be07a4e2a035209f2fab75059072717def07ee4f85636f2126738ad746b697ff4734'
 
   # ==> LDAP Configuration
   # config.ldap_logger = true
