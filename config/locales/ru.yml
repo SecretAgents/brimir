@@ -13,6 +13,10 @@ ru:
   sign_out: 'Выход'
   delete: 'Удалить'
 
+  your_ticket_has_been_closed: 'Ваша заявка была закрыта'
+  str_is_working_on_your_ticket: 'Мы работаем над вашей заявкой'
+  create_ticket: 'Создать заявку'
+
 # devise/sessions/new
   sign_in: 'Войти'
 
@@ -97,6 +101,8 @@ ru:
   send_reply: 'Отправить ответ'
   on_date_author_wrote: '%{date}, %{author} написал:'
   notification_will_be_sent_to: 'Ваше уведомление будет отправлено:'
+  save_as_draft: 'Сохранить как черновик'
+  internal_note: 'Внутренний комментарий (не виден клиенту)'
 
 # ticket_mailer/notify_assigned.text.erb
   ticket_assigned: 'Заявка назначена вам'
@@ -213,5 +219,7 @@ ru:
           change_status: 'Изменить статус'
           change_priority: 'Изменить приоритет'
         action_value: 'Параметры действий'
+      email_template:
+        from: 'От'
 
 
