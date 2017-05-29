@@ -6,7 +6,7 @@
   <h3><%= t(:new_ticket) %></h3>
 
   <p>
-    <%= f.text_field :from, tabindex: tabindex %>
+    <%= f.text_field :from, tabindex: tabindex, placeholder: t('activerecord.attributes.ticket.from_placeholder') %>
   </p>
 
   <% if !current_user.nil? && current_user.agent? %>
@@ -23,7 +23,7 @@
   <% end %>
 
   <p>
-    <%= f.text_field :subject, tabindex: tabindex %>
+    <%= f.text_field :subject, tabindex: tabindex, placeholder: t('activerecord.attributes.ticket.subject_placeholder') %>
   </p>
 
   <% if can? :update, @ticket %>
@@ -54,10 +54,10 @@
     %>
 
     <% if type == 'html' %>
-      <%= f.trix_editor :content,
+      <%= f.trix_editor :content, placeholder: t('activerecord.attributes.ticket.content_placeholder'),
         value: (f.object.content.nil? ? content : f.object.content), tabindex: tabindex %>
     <% else %>
-      <%= f.text_area :content,
+      <%= f.text_area :content, placeholder: t('activerecord.attributes.ticket.content_placeholder'),
         value: (f.object.content.nil? ? content : f.object.content), tabindex: tabindex %>
     <% end %>
   </p>
