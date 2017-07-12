@@ -19,6 +19,9 @@
           <%= !@ticket.subject.blank? ? @ticket.subject : "<em>(#{t(:no_subject)})</em>".html_safe %>
         </h3>
         <h5 class="text-default mb no-mt">
+          <% if @ticket.user and !@ticket.user.phone.blank? %>
+              <%= @ticket.user.phone %>
+          <% end %>
           <%= t(:ticket_by_at, email: link_to(@ticket.user.email, user_tickets_path(user_id: @ticket.user.id)), at: l(@ticket.created_at.in_time_zone(current_user.time_zone), format: :long)).html_safe %>
           <% unless @ticket.to_email_address.nil? %>
             <%= t :to_email, email: @ticket.to_email_address.email %>

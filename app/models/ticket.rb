@@ -16,6 +16,7 @@
 
 class Ticket < ApplicationRecord
   include CreateFromUser
+  include TicketAddPhone
   include EmailMessage
   include TicketMerge
 

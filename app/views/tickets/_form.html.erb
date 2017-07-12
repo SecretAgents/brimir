@@ -9,6 +9,10 @@
     <%= f.text_field :from, tabindex: tabindex, placeholder: t('activerecord.attributes.ticket.from_placeholder') %>
   </p>
 
+  <p>
+    <%= f.text_field :phone, tabindex: tabindex, placeholder: 'Личный мобильный телефон для уточнения запроса при необходимости' %>
+  </p>
+
   <% if !current_user.nil? && current_user.agent? %>
     <p>
       <% blank = @email_addresses.count == 0 ? EmailAddress.default_email : nil %>

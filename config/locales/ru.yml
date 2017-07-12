@@ -195,6 +195,7 @@ ru:
 
       ticket:
         from: 'Email'
+        phone: 'Телефон'
         from_placeholder: 'Проверяемый вами Email-адрес, на который придет ответ'
         subject: 'Тема'
         subject_placeholder: 'Сформулируйте тему так, чтобы по ней было понятна суть запроса из списка'
